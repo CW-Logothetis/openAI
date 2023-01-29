@@ -1,5 +1,6 @@
 <script>
-  import '@picocss/pico'
+//   import '@picocss/pico'
+  import '../app.css'
 </script> 
 
 <nav>
@@ -13,19 +14,26 @@
 
 <style>
 	nav {
-		background: rgba(0, 0, 0, 0.4);
-		padding-top: 1rem;
-		padding-bottom: 1rem;
-		text-transform: uppercase;
-		font-size: 0.7rem;
-		letter-spacing: 0.1px;
+		padding: 1rem;
+	}
+	
+	nav > a {
+		color: aliceblue;
+		font-size: 1rem;
 		font-weight: 500;
+		letter-spacing: 0.1px;
+		text-decoration: none;
 	}
 
 	:global(html) {
 		background: rgb(20, 20, 40);
 		/* scrollbar-gutter: stable; */
 		overflow-y: scroll;
+	}
+
+	:global(body) {
+		margin: 0;
+		padding: 0;
 	}
 
 	:global(.layout) {
@@ -36,11 +44,6 @@
 
 	main {
 		margin-bottom: 5rem;
-		margin-top: 5vw;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
 	}
 
 </style>
