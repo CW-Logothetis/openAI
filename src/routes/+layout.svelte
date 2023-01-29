@@ -19,7 +19,7 @@
 	
 	nav > a {
 		color: aliceblue;
-		font-size: 1rem;
+		font-size: 1em;
 		font-weight: 500;
 		letter-spacing: 0.1px;
 		text-decoration: none;

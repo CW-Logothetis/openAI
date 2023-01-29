@@ -37,7 +37,7 @@
 		background: rgba(0, 0, 0, 0.4);
 		margin: 0;
 		width: 100%;
-		padding: 1em;
+		padding: 1rem;
 		margin-bottom: 3em;
 	}
 	
@@ -56,7 +56,7 @@
 	.header__content > p {
 		color: aliceblue;
 		font-size: 1rem;
-		margin-bottom: 1.5em;
+		margin-bottom: 1.5rem;
 	}
 
 	.cards {
@@ -83,8 +83,7 @@
 		border-radius: 10px;
 		padding: 25px;
 		padding-bottom: 5px;
-		/* width: 100%; */
-		height: 10em;
+		height: 10rem;
 		cursor: pointer; 
 	}
 </style>
