@@ -8,13 +8,17 @@
 
     const openai = new OpenAIApi(configuration);
 
-    export const load = async ({ fetch }) => {
+    export const load = async ({ fetch, params }) => {
         console.log('server ran')
+        const arrayMethodID = Object.values(params)
+        console.log(arrayMethodID)
         const completion = async () => {
             console.log('ran on client')
+            console.log(arrayMethodID)
+
             const data = await openai.createCompletion({
                 model: 'text-davinci-003',
-                prompt: 'Explain array.Prototype.reduce() with two examples and an exercise',
+                prompt: `Explain array.Prototype.${arrayMethodID}() with two examples and an exercise`,
                 max_tokens: 1000,
                 temperature: 0.3,
                 top_p: 1.0,
