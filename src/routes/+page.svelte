@@ -64,7 +64,7 @@
 		margin: 0 auto;
 		align-items: center;
 		grid-template-columns: repeat(auto-fit, minmax(12em, 1fr));
-		grid-gap: 1rem;
+		grid-gap: 1.5rem;
 		max-width: 900px;
 	}
 
@@ -78,12 +78,17 @@
 	}
 
 	.card {
-		border: 1px solid #EAEAEA;
 		background-color: var(--js-yellow);
 		border-radius: 10px;
 		padding: 25px;
 		padding-bottom: 5px;
 		height: 10rem;
 		cursor: pointer; 
+		transition: transform .2s;
+	}
+
+	.card:hover {
+		transform: scale(1.05);
+		box-shadow: 0px 8px 8px rgba(124, 124, 111, 0.25);
 	}
 </style>
