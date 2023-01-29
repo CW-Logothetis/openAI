@@ -18,7 +18,7 @@
 
             const data = await openai.createCompletion({
                 model: 'text-davinci-003',
-                prompt: `Explain array.Prototype.${arrayMethodID}() with two examples and an exercise`,
+                prompt: `Explain array.Prototype.${arrayMethodID}(). Then give syntax, two examples and an exercise without the answer.`,
                 max_tokens: 1000,
                 temperature: 0.3,
                 top_p: 1.0,
