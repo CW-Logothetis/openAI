@@ -3,10 +3,14 @@
 	import { arrayMethods } from '$lib/arrayMethods'
 </script>
 
+
 <section class="header">
 	<div class="header__content">
-		<h1>Array methods</h1>
-		<p>Summaries, syntax and example</p>
+		<div class="header__text">
+			<h1>Array methods</h1>
+			<p>Summaries, syntax and example</p>
+		</div>
+		<img src='/diagram_array.png' alt='diagram of an array'/>
 	</div>
 </section>
 
@@ -20,40 +24,48 @@
 </section>
 
 
-
 <style>
+
 	h2 {
 		color: var(--js-grey);
 		font-size: 1.1rem;
-		margin-bottom: 1.5em;
+		margin-bottom: 1.25em;
 	}
 
 	p {
-		font-size: 0.8rem;
+		font-size: 1rem;
 		color: var(--js-grey)
 	}
 
+	img {
+		width: 50%;
+	}
+
 	.header {
-		background: rgba(0, 0, 0, 0.4);
+		background: rgba(0, 0, 0, 0.3);
 		margin: 0;
 		width: 100%;
-		padding: 1rem;
 		margin-bottom: 3em;
 	}
 	
 	.header__content {
+		color: aliceblue;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
 		margin: 0 auto;
+		padding: 0 1em;
 		max-width: 900px;
 	}
 	
-	.header__content > h1 {
-		color: aliceblue;
+	.header__content  h1 {
+		
 		font-size: 1.8rem;
 		font-weight: 500;
-		margin-bottom: 1.5em;
+		margin-bottom: 1em;
 	}
 
-	.header__content > p {
+	.header__content  p {
 		color: aliceblue;
 		font-size: 1rem;
 		margin-bottom: 1.5rem;
@@ -62,6 +74,7 @@
 	.cards {
 		display: grid;
 		margin: 0 auto;
+		padding: 0 2em;
 		align-items: center;
 		grid-template-columns: repeat(auto-fit, minmax(12em, 1fr));
 		grid-gap: 1.5rem;
@@ -88,7 +101,14 @@
 	}
 
 	.card:hover {
-		transform: scale(1.05);
 		box-shadow: 0px 8px 8px rgba(124, 124, 111, 0.25);
+		transform: scale(1.05);
+	}
+
+	.card:hover > h2 {
+		color: rgb(16, 16, 16);
+	}
+	.card:hover > p {
+		color: rgb(16, 16, 16);
 	}
 </style>
