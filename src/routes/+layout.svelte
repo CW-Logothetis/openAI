@@ -15,6 +15,8 @@
 <style>
 	nav {
 		padding: 1rem;
+		margin: 0 auto;
+		max-width: 900px;
 	}
 	
 	nav > a {

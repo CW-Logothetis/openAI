@@ -1,6 +1,7 @@
 :root {
     --js-yellow: #e8d44d;
     --js-grey: #323330;
+    font-family: BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
 }
 
 * {

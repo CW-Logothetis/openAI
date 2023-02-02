@@ -2,7 +2,7 @@ export let arrayMethods = [
     {
         id: "at",
         method: "at()",
-        description: "Return element at requested index "
+        description: "Return el at requested index "
     },
     {
         id: "concat",
@@ -12,7 +12,7 @@ export let arrayMethods = [
     {
         id: "copyWithin",
         method: "copyWithin()",
-        description: "Copy element to other index in same array"
+        description: "Copy el to other index in same array"
     },
     {
         id: "entries",
@@ -22,7 +22,7 @@ export let arrayMethods = [
     {
         id: "every",
         method: "every()",
-        description: "Test if EVERY element passes a given test"
+        description: "Test if EVERY el passes a given test"
     },
     {
         id: "fill",
@@ -32,32 +32,32 @@ export let arrayMethods = [
     {
         id: "filter",
         method: "filter()",
-        description: "Create NEW array with elements in orig. array that pass a test"
+        description: "Create NEW array with els in orig. array that pass a test"
     },
     {
         id: "find",
         method: "find()",
-        description: "Return value of the 1st element that passes a test (L-R)"
+        description: "Return value of the 1st el that passes a test (L-R)"
     },
     {
         id: "findIndex",
         method: "findIndex()",
-        description: "Return index of 1st element that passes a test (L-R)"
+        description: "Return index of 1st el that passes a test (L-R)"
     },
     {
         id: "findLast",
         method: "findLast()",
-        description: "Return value of 1st element that passes a test (R-L)"
+        description: "Return value of 1st el that passes a test (R-L)"
     },
     {
         id: "findLastIndex",
         method: "findLastIndex()",
-        description: "Return index of 1st element that passes a test (R-L)"
+        description: "Return index of 1st el that passes a test (R-L)"
     },
     {
         id: "flat",
         method: "flat()",
-        description: "Return NEW array to concatanate nested arrays or remove empty elements"
+        description: "Return NEW array to concatanate nested arrays or remove empty els"
     },
     {
         id: "flatMap",
@@ -67,7 +67,7 @@ export let arrayMethods = [
     {
         id: "forEach",
         method: "forEach()",
-        description: "Run a function on each element"
+        description: "Run a function on each el"
     },
     {
         id: "from",
@@ -77,12 +77,12 @@ export let arrayMethods = [
     {
         id: "includes",
         method: "includes()",
-        description: "Check if array includes your requested element"
+        description: "Check if array includes your requested el"
     },
     {
         id: "indexOf",
         method: "indexOf()",
-        description: "Search for an element. Returns its position"
+        description: "Search for an el Returns its position"
     },
     {
         id: "isArray",
@@ -92,7 +92,7 @@ export let arrayMethods = [
     {
         id: "join",
         method: "join()",
-        description: "Join all elements into one string"
+        description: "Join all els into one string"
     },
     {
         id: "keys",
@@ -102,12 +102,12 @@ export let arrayMethods = [
     {
         id: "lastIndexOf",
         method: "lastIndexOf()",
-        description: "Search for an element, from array's end. Return el position"
+        description: "Search for an el, from array's end. Return el position"
     },
     {
         id: "map",
         method: "map()",
-        description: "Create NEW array from results of running a function on each element"
+        description: "Create NEW array from results of running a function on each el"
     },
     {
         id: "of",
@@ -117,32 +117,32 @@ export let arrayMethods = [
     {
         id: "pop",
         method: "pop()",
-        description: "Remove last element. Return element"
+        description: "Remove last el Return el"
     },
     {
         id: "push",
         method: "push()",
-        description: "Add new elements to end. Return new length"
+        description: "Add new els to end. Return new length"
     },
     {
         id: "reduce",
         method: "reduce()",
-        description: "Convert all elements into a single value (L-to-R)"
+        description: "Convert all els into a single value (L-to-R)"
     },
     {
         id: "reduceRight",
         method: "reduceRight()",
-        description: "Convert all elements into a single value (R-to-L)"
+        description: "Convert all els into a single value (R-to-L)"
     },
     {
         id: "reverse",
         method: "reverse()",
-        description: "Reverse order of elements"
+        description: "Reverse order of els"
     },
     {
         id: "shift",
         method: "shift()",
-        description: "Remove 1st element. Return element."
+        description: "Remove 1st el. Return el."
     },
     {
         id: "slice",
@@ -152,17 +152,17 @@ export let arrayMethods = [
     {
         id: "some",
         method: "some()",
-        description: "Test if ANY elements pass a given test"
+        description: "Test if ANY els pass a given test"
     },
     {
         id: "sort",
         method: "sort()",
-        description: "Sort elements"
+        description: "Sort els"
     },
     {
         id: "splice",
         method: "splice()",
-        description: "Add or remove elements"
+        description: "Add or remove els"
     },
     {
         id: "toLocaleString",
@@ -177,7 +177,7 @@ export let arrayMethods = [
     {
         id: "unshift",
         method: "unshift()",
-        description: "Adds new elements to start. Return new length"
+        description: "Adds new els to start. Return new length"
     },
     {
         id: "values",
