@@ -11,9 +11,9 @@
     export const load = async ({ fetch, params }) => {
         console.log('server ran')
         const arrayMethodID = Object.values(params)
-        console.log(arrayMethodID)
+
         const completion = async () => {
-            console.log('ran on client')
+        
             console.log(arrayMethodID)
 
             const data = await openai.createCompletion({
