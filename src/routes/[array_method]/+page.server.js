@@ -1,6 +1,7 @@
 // @ts-nocheck
     import { OpenAI_API_KEY } from '$env/static/private'
     import { Configuration, OpenAIApi } from 'openai';
+    import { error } from '@sveltejs/kit';
 
     const configuration = new Configuration({
         apiKey: OpenAI_API_KEY
@@ -26,7 +27,15 @@
                 presence_penalty: 0.0,
                 stop: ["\"\"\""],
             });
+            
+            if (!post) {
+                throw error(404, {
+                    message: 'Not found'
+                });
+            }
+            
             return data.data.choices[0].text;
+            
         };
 
         return {
