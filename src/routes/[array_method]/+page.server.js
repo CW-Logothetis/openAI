@@ -11,11 +11,7 @@
 
     export const load = async ({ fetch, params }) => {
         console.log('server ran')
-        //             if (!data) {
-                throw error(502, {
-                    message: 'Not found'
-                });
-//             }
+     
         const arrayMethodID = Object.values(params)
 
         const completion = async () => {
@@ -25,7 +21,7 @@
             const data = await openai.createCompletion({
                 model: 'text-curie-001',
                 prompt: `Explain array.Prototype.${arrayMethodID}(). Then give syntax, two examples and an exercise without the answer.`,
-                max_tokens: 1000,
+                max_tokens: 500,
                 temperature: 0.3,
                 top_p: 1.0,
                 frequency_penalty: 0.0,
@@ -34,7 +30,11 @@
             });            
             
             return data.data.choices[0].text;
-            
+            // if (!data) {
+            //     throw error(502, {
+            //         message: 'Not found'
+            //     });
+            // }  
         };
 
         return {
