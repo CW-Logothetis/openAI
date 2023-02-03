@@ -19,7 +19,7 @@
             console.log(arrayMethodID)
 
             const data = await openai.createCompletion({
-                model: 'text-curie-001',
+                model: 'text-curie-000',
                 prompt: `Explain array.Prototype.${arrayMethodID}(). Then give syntax, two examples and an exercise without the answer.`,
                 max_tokens: 500,
                 temperature: 0.3,
@@ -30,14 +30,16 @@
             });            
             
             return data.data.choices[0].text;
-            // if (!data) {
-            //     throw error(502, {
-            //         message: 'Not found'
-            //     });
-            // }  
+            
+           
+           
         };
 
         return {
             output: completion()
+        }
+
+        if (!data) {
+            throw error();
         }
     }

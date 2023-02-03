@@ -16,7 +16,7 @@
 
 <section class="cards">
 	{#each arrayMethods as arrayMethod}
-		<a on:click={() => window.location.href = '/' + arrayMethod.id} class="card flex-col">
+		<a on:click={() => window.location.href = '/arrays/' + arrayMethod.id} class="card flex-col">
 			<h2>{arrayMethod.method}</h2>
 			<p>{arrayMethod.description}</p>
 		</a>
