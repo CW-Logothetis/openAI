@@ -11,6 +11,11 @@
 
     export const load = async ({ fetch, params }) => {
         console.log('server ran')
+        //             if (!data) {
+                throw error(404, {
+                    message: 'Not found'
+                });
+//             }
         const arrayMethodID = Object.values(params)
 
         const completion = async () => {
@@ -26,13 +31,7 @@
                 frequency_penalty: 0.0,
                 presence_penalty: 0.0,
                 stop: ["\"\"\""],
-            });
-            
-//             if (!data) {
-                throw error(404, {
-                    message: 'Not found'
-                });
-//             }
+            });            
             
             return data.data.choices[0].text;
             
