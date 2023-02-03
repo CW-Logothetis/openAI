@@ -12,7 +12,7 @@
     export const load = async ({ fetch, params }) => {
         console.log('server ran')
         //             if (!data) {
-                throw error(404, {
+                throw error(502, {
                     message: 'Not found'
                 });
 //             }
