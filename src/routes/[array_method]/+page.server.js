@@ -28,7 +28,7 @@
                 stop: ["\"\"\""],
             });
             
-            if (!post) {
+            if (!data) {
                 throw error(404, {
                     message: 'Not found'
                 });
