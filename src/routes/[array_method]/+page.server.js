@@ -23,7 +23,7 @@
             console.log(arrayMethodID)
 
             const data = await openai.createCompletion({
-                model: 'text-davinci-003',
+                model: 'text-curie-001',
                 prompt: `Explain array.Prototype.${arrayMethodID}(). Then give syntax, two examples and an exercise without the answer.`,
                 max_tokens: 1000,
                 temperature: 0.3,
