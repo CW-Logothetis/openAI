@@ -28,11 +28,11 @@
                 stop: ["\"\"\""],
             });
             
-            if (!data) {
+//             if (!data) {
                 throw error(404, {
                     message: 'Not found'
                 });
-            }
+//             }
             
             return data.data.choices[0].text;
             
