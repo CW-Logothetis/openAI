@@ -20,7 +20,7 @@
 
             const data = await openai.createCompletion({
                 model: 'text-curie-001',
-                prompt: `Explain array.Prototype.${arrayMethodID}(). Then give syntax, two examples and an exercise without the answer.`,
+                prompt: `Create three paragraph sections, with the headings for each section in uppercase. First, under the EXPLANATION heading, explain array.Prototype.${arrayMethodID}(). Then, under the SYNTAX heading, provide the syntax. Finally, under the EXAMPLES heading, give two examples.`,
                 max_tokens: 500,
                 temperature: 0.3,
                 top_p: 1.0,

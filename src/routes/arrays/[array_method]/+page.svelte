@@ -2,7 +2,16 @@
 // @ts-nocheck
     export let data
     const { output } = data
-    console.log(output)
+    let newOutput
+
+    function styleHeadings() {
+        const explanationOutput = output.replace("EXPLANATION", "<div style='margin-bottom: 1px; font-weight: 600'>EXPLANATION</div>");
+        const syntaxOutput = explanationOutput.replace("SYNTAX", "<div style='margin: 20px 0 1px; font-weight: 600'>SYNTAX</div>")
+        newOutput = syntaxOutput.replace("EXAMPLES", "<div style='margin: 20px 0 1px; font-weight: 600'>EXAMPLES</div>")
+        return newOutput;
+    }
+    styleHeadings()
+
 </script>
 
 
@@ -10,7 +19,7 @@
     {#if !output}
         Loading...
     {:else}
-        {output}
+        {@html newOutput}
     {/if}
 </section>
 
