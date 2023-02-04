@@ -28,13 +28,24 @@
 
 	h2 {
 		color: var(--js-grey);
-		font-size: 1.1rem;
-		margin-bottom: 1.25em;
+		font-size: 1rem;
+		margin-bottom: 0.25em;
 	}
 
 	p {
-		font-size: 1rem;
+		font-size: 0.75rem;
 		color: var(--js-grey)
+	}
+
+	@media(min-width: 600px) {
+		h2 {
+			font-size: 1.1rem;
+		margin-bottom: 1.25em;
+		}
+
+		p {
+			font-size: 1rem;
+		}
 	}
 
 	img {
@@ -93,11 +104,18 @@
 	.card {
 		background-color: var(--js-yellow);
 		border-radius: 10px;
-		padding: 25px;
+		padding: 5px 20px;
 		padding-bottom: 5px;
-		height: 10rem;
+		height: 5rem;
 		cursor: pointer; 
 		transition: transform .2s;
+	}
+
+	@media(min-width: 600px) {
+		.card {
+			height: 10rem;
+			padding: 25px;
+		}
 	}
 
 	.card:hover {
