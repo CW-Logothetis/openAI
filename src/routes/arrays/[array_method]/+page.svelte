@@ -96,6 +96,7 @@
 
     li {
         margin-bottom: 15px;
+        cursor: pointer;
     }
 
     .method-menu {
