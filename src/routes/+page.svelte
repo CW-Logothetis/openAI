@@ -70,7 +70,6 @@
 	}
 	
 	.header__content  h1 {
-		
 		font-size: 1.8rem;
 		font-weight: 500;
 		margin-bottom: 1em;
